@@ -19,4 +19,4 @@
     shell: docker rm $(docker ps -a -q)
 
   - name: Deploy Docker Container
-    command: docker run -itd -p 8084:8081 sanjaysan01/sa-bankingapp:latest
+    command: docker run -itd -p 8084:8081 sanjaysan01/sa-bankingapp:14
