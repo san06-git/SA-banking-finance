@@ -1,5 +1,5 @@
 - name : Configure Docker on EC2 Instances
-  hosts : agent_node_1
+  hosts : node1
   become: true
   connection : ssh
   tasks : 
@@ -13,4 +13,4 @@
     command : sudo systemctl start docker
 
   - name: Deploy Docker Container
-    command: docker run -itd -p 8084:8081 sanjaysan01/SA-bankingapp:latest
+    command: docker run -itd -p 8084:8081 sanjaysan01/sa-bankingapp:latest
