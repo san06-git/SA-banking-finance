@@ -1,6 +1,7 @@
 - name : Configure Docker on EC2 Instances
   hosts : prodnode
   become: true
+  become_method: sudo
   connection : ssh
   tasks : 
   - name: updating apt
